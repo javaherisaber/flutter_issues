@@ -1,9 +1,34 @@
 # Flutter Issues
 Hard earned issues that we can document and reuse every time we need it!
 
-## {Title of your issue}
-Some description of your issue
+## CocoaPods not installed or not in valid state
+I run first 
 ```bat
-example commands here
+sudo gem install cocoapods
 ```
-Solutions you've found
+or 
+```bat
+$ gem install cocoapods --user-install
+$ gem which cocoapods
+/Users/eloy/.gem/ruby/2.0.0/gems/cocoapods-0.29.0/lib/cocoapods.rb
+$ /Users/eloy/.gem/ruby/2.0.0/bin/pod install
+```
+but don't work, because command tools of Xcode was not installed.
+ you should run 
+```bat
+xcode-select --install
+```
+to install command tools of Xcode and then use brew or rvm , ... to install cocoapods.
+
+commands for installing brew:
+```bat
+% /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+(echo; echo 'eval "$(/usr/local/bin/brew shellenv)"') >> /Users/edvard/.zprofile
+```
+finally you can install cocoapods :
+```bat
+brew install cocoapods
+
+pod install
+```
