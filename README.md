@@ -13,7 +13,7 @@ $ gem which cocoapods
 /Users/eloy/.gem/ruby/2.0.0/gems/cocoapods-0.29.0/lib/cocoapods.rb
 $ /Users/eloy/.gem/ruby/2.0.0/bin/pod install
 ```
-but don't work, because of command tools of Xcode was not installed.
+but don't work, because command tools of Xcode was not installed.
  you should run 
 ```bat
 xcode-select --install
