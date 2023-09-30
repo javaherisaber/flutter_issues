@@ -32,3 +32,11 @@ brew install cocoapods
 
 pod install
 ```
+
+## Android dependency not resolved due to server TLS version
+There is a build error which is caused by TLS version that is used in Gradle
+
+In gradle.properties add this to the end of the file
+```bat
+https.protocols=TLSv1.0
+```
